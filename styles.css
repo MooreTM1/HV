@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    overflow: hidden;
+    font-family: 'Times New Roman', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Heart Button */
+.start-btn {
+    font-size: 200px;  /* Increase size */
+    background: none;  /* Remove background */
+    border: none;      /* Remove border */
+    cursor: pointer;
+    outline: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    color: red;  
+}
+
+/* Hover effect */
+.start-btn:hover {
+    transform: scale(1.2);  /* Slightly enlarge when hovered */
+}
+
+/* Make it fit in the center */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px red;
+    opacity: 0; /* Start invisible */
+    transition: opacity 2s ease-in-out;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    opacity: 0; /* Start invisible */
+    transition: opacity 2s ease-in-out;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: fall linear infinite;
+}
+
+/* Falling Animation */
+@keyframes fall {
+    from {
+        top: -20%; /* Starts above the screen */
+    }
+    to {
+        top: 100%; /* Ends at the bottom of the screen */
+    }
+}
