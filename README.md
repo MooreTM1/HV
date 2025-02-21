@@ -3,7 +3,7 @@ This is a simple and interactive Valentine's Day webpage that feautres
 a 💌 button, falling heart animations, background music and a peom.
 
 # 📺 Live Demo
-[Click here to view](https://mooretm1.github.io/HV/)
+[Live Demo](https://your-github-username.github.io/repository-name/){:target="_blank"}
 
 # ✨ Features
 - 💌 - Click heart to start.
